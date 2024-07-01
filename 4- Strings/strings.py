@@ -31,7 +31,7 @@ print(f"Mi nombre es {name} {surname} y mi edad es {age}"); # Inferencia de dato
 
 
 # DESEMPAQUETADO DE CARACTERES
-language = 'Python';
+language = 'python';
 # a, b = language;   --> Esto da error
 a, b, c, d, e, f = language;
 print('a: ' + a);
@@ -67,3 +67,14 @@ print('language[::-2]: ' + reversed_language);
 
 reversed_language = language[::1];
 print('language[::1]: ' + reversed_language);
+
+# Metodos o funciones
+print('language.capitalize(): ', language.capitalize())  # pondra la 1ra letra en mayusculas
+print('language.upper(): ', language.upper())  # Todo eb nmayuscula
+print('language.count(): ', language.count('t'))  # Contara el numero de t's
+print('language.isnumeric(): ', language.isnumeric())   # Comprovara si el string es un numero
+print('"1".isnumeric(): ', '1'.isnumeric())  
+print('language.lower(): ', language.lower())  # A munuscula
+print('language.upper().isupper(): ', language.upper().isupper())  # Pondra a mayuscula y comprovara si es mayusculas
+print('language.startswith("py"): ', language.startswith('py'))   
+print('language.startswith("Py"): ', language.startswith('Py')) 
